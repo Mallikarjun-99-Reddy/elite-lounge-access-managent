@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Lounge - Access Your Retreat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/lounge.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="/" class="logo">Elite Lounge</a>
+        </div>
+        <div class="header-right">
+            <a href="/">Home</a>
+            <a href="#checkin">Check-In</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+    <section class="lounge-main">
+        <h1>Your Lounge Retreat</h1>
+        <div class="timer-container">
+            <p id="timer" class="timer">Time Remaining: 2:00</p>
+            <button id="extendBtn" class="extend-btn">Extend Stay</button>
+        </div>
+        <div id="paymentSection" class="payment-section hidden">
+            <h3>Extend Your Stay</h3>
+            <p>Add 1 minute for $10.</p>
+            <button id="payBtn" class="submit-btn">Pay Now</button>
+            <p id="paymentMessage"></p>
+        </div>
+        <div id="servicesSection">
+            <h2>Explore Our Services</h2>
+            <ul id="servicesList" class="services-grid">
+                <li class="service-card">
+                    <img src="images/refreshments.jpg" alt="Refreshments">
+                    <div class="service-info"><span>Refreshments - $5</span></div>
+                    <button class="add-btn" data-service="Refreshments" data-cost="5">+</button>
+                    <div class="service-popup">Light bites and drinks to refresh your journey.</div>
+                </li>
+                <li class="service-card">
+                    <img src="images/massage.jpg" alt="Massage">
+                    <div class="service-info"><span>Massage - $20</span></div>
+                    <button class="add-btn" data-service="Massage" data-cost="20">+</button>
+                    <div class="service-popup">Relax with a soothing massage.</div>
+                </li>
+                <li class="service-card">
+                    <img src="images/wifi.png" alt="Wi-Fi">
+                    <div class="service-info"><span>Wi-Fi Access - Free</span></div>
+                    <button class="add-btn" data-service="Wi-Fi Access" data-cost="0">+</button>
+                    <div class="service-popup">Stay connected with high-speed Wi-Fi.</div>
+                </li>
+                <li class="service-card">
+                    <img src="images/booth.jfif" alt="Booth">
+                    <div class="service-info"><span>Private Booth - $15</span></div>
+                    <button class="add-btn" data-service="Private Booth" data-cost="15">+</button>
+                    <div class="service-popup">A secluded space for privacy.</div>
+                </li>
+                <li class="service-card">
+                    <img src="images/cocktails.jfif" alt="Cocktails">
+                    <div class="service-info"><span>Cocktails - $12</span></div>
+                    <button class="add-btn" data-service="Cocktails" data-cost="12">+</button>
+                    <div class="service-popup">Signature drinks crafted to perfection.</div>
+                </li>
+                <li class="service-card">
+                    <img src="images/sauna.jfif" alt="Sauna">
+                    <div class="service-info"><span>Sauna - $25</span></div>
+                    <button class="add-btn" data-service="Sauna" data-cost="25">+</button>
+                    <div class="service-popup">Detox and unwind in our sauna.</div>
+                </li>
+                <li class="service-card">
+                    <img src="images/gaming.avif" alt=Gaming">
+                    <div class="service-info"><span>Gaming Zone - $10</span></div>
+                    <button class="add-btn" data-service="Gaming Zone" data-cost="10">+</button>
+                    <div class="service-popup">Enjoy premium gaming entertainment.</div>
+                </li>
+                <li class="service-card">
+                    <img src="images/reading.webp" alt="Reading">
+                    <div class="service-info"><span>Reading Nook - Free</span></div>
+                    <button class="add-btn" data-service="Reading Nook" data-cost="0">+</button>
+                    <div class="service-popup">A quiet corner with curated books.</div>
+                </li>
+                <li class="service-card">
+                    <img src="images/music.jfif" alt="Music">
+                    <div class="service-info"><span>Live Music - $8</span></div>
+                    <button class="add-btn" data-service="Live Music" data-cost="8">+</button>
+                    <div class="service-popup">Live performances to elevate your mood.</div>
+                </li>
+                <li class="service-card">
+                    <img src="images/spa.avif" alt="Spa">
+                    <div class="service-info"><span>Spa Treatment - $30</span></div>
+                    <button class="add-btn" data-service="Spa Treatment" data-cost="30">+</button>
+                    <div class="service-popup">Indulgent spa therapies for relaxation.</div>
+                </li>
+            </ul>
+        </div>
+        <div id="adsSection">
+            <h2>Exclusive Offers For You</h2>
+            <div id="adsList" class="ads-grid"></div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Elite Lounge. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+    <div id="popup" class="popup hidden">
+        <p>Your request has been sent!</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Lounge - Your Travel Sanctuary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/checkin.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="leads.html">Lead Management System</a></li>
+            </ul>
+            <div class="brand">
+                <h1>Elite Lounge</h1>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Your Gateway to Tranquility</h2>
+        <p>Escape the chaos of travel and indulge in unparalleled luxury at Elite Lounge.</p>
+        <a href="#checkin" class="scroll-btn">Check In Now</a>
+    </section>
+    <section id="checkin" class="checkin-section">
+        <h3>Secure Your Spot</h3>
+        <form id="checkinForm" class="checkin-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" required placeholder="Enter your name">
+            <label for="email">Email</label>
+            <input type="email" id="email" required placeholder="Your email address">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" required placeholder="Your phone number">
+            <label for="accessMethod">Access Method</label>
+            <select id="accessMethod" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="Membership">Membership</option>
+                <option value="Referral">Referral</option>
+                <option value="Online Booking">Online Booking</option>
+            </select>
+            <label for="visitDate">Visit Date</label>
+            <input type="date" id="visitDate" required>
+            <button type="submit" class="submit-btn">Check In</button>
+        </form>
+        <p id="message"></p>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Elite Lounge. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
